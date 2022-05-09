@@ -3,18 +3,13 @@
 Python keywords
 """
 
-import keyword
-keyword.kwlist
+#keyword.kwlist
 ################################
+x = pow(2,10)
+print(x)
 
-10+10
-
-x = pow(2,10);
-x;
-print(x);
-
-sum1=10+10;
-sum1;
+sum1=10+10
+print(sum1)
 #len(sum1);
 
 ################################
@@ -31,103 +26,103 @@ type(PK)
 
 #List > []
 
-listOne = list([1,2,[1.1,2.2]]);
-listOne;
+listOne = list([1,2,[1.1,2.2]])
+print(listOne)
 type(listOne)
-len(listOne);
+len(listOne)
 
 #accessing element of nested list = first element of sub list 1.1
-listOne[2][0]
+print(listOne[2][0])
 
-listOne1 = ['A', 'Hello',11,1.2];
-listOne1;
+listOne1 = ['A', 'Hello',11,1.2]
+print(listOne1)
 
 # Extend List
-L1=['a','b'];
-L2=[1,2];
-L3=['Java', 'Python'];
-L1+L2+L3;
+L1=['a','b']
+L2=[1,2]
+L3=['Java', 'Python']
+print(L1+L2+L3)
 
 # extend () to add two list
-A1 = [ 'a', 'b'];
-A2 = ['c', 'd'];
-A1.extend(A2);
-print(A2);
-print(A1);
+A1 = [ 'a', 'b']
+A2 = ['c', 'd']
+A1.extend(A2)
+print(A2)
+print(A1)
 
 # Append() ; will create nested list
-B1 = ['Hi', 'HELLO'];
-B2 = [1,2];
-B1.append(B2);
-print(B1);
+B1 = ['Hi', 'HELLO']
+B2 = [1,2]
+B1.append(B2)
+print(B1)
 
 # Delete List
 ##### Delete Element  - value needs to be provided for deletion#####
-elm = ['a', 'b', 'c','d','e'];
-elm.remove('e');
-print(elm);
+elm = ['a', 'b', 'c','d','e']
+elm.remove('e')
+print(elm)
 
 #remove by position
-elm = ['a', 'b', 'c','d','e'];
-elm.pop(1);
-print(elm);
+elm = ['a', 'b', 'c','d','e']
+elm.pop(1)
+print(elm)
 
 # remove last position
-elm = ['a', 'b', 'c','d','e'];
-elm.pop();
-print(elm);
+elm = ['a', 'b', 'c','d','e']
+elm.pop()
+print(elm)
 
 # clear all elements from list
-elm = ['a', 'b', 'c','d','e'];
-elm.clear();
-print(elm);
+elm = ['a', 'b', 'c','d','e']
+elm.clear()
+print(elm)
 
 # Sort elements of a  list
-elm = ['a', 'c', 'b','d','e'];
-elm.sort();
-print(elm);
+elm = ['a', 'c', 'b','d','e']
+elm.sort()
+print(elm)
 
 # Reversing the sequence of elements
-elm = ['a', 'b', 'c','d','e'];
-elm.reverse();
-print(elm);
+elm = ['a', 'b', 'c','d','e']
+elm.reverse()
+print(elm)
 
 # Findng first index position of n element in a List
-elm = ['a', 'b', 'c','d','e'];
-i = elm.index('b');
-print(i);
+elm = ['a', 'b', 'c','d','e']
+i = elm.index('b')
+print(i)
 
 ################## String ##################
 
 v1 = 'a'
 v2 = "A"
 v3 = """A"""
-print(v1);
-print(v2);
-print(v3);
-type(v1);
+print(v1)
+print(v2)
+print(v3)
+type(v1)
 
 # """ is required when we need multiple lines as string
 v4 = """ wdhiudhef
 dwcgfvhcfweu
 bhdsbwiud"""
-print(v4);
+print(v4)
 
-v5 = "PYTHON";
-v5[-2]
-v5[2]
+v5 = "PYTHON"
+print(v5[-2])
+print(v5[2])
 
 #v5[2] = 'B' #TypeError: 'str' object does not support item assignment
 
 ###
 #V1[3:5]------[Start Include: End Exclude]
 v1 = "PYTHON String"
-v1[-1];
-len(v1);
+print(v1[-1])
+print(len(v1))
 #v1[13]; - #IndexError: string index out of range
-print(v1);
-v1[3:5]; #this will give o/p 'ho'
-print(v1);
+print(v1)
+print(v1[3:5]) #this will give o/p 'ho'
+print(v1)
 print(v1[-1:-7])
 
 v1 = "PYTHON String"
@@ -161,7 +156,7 @@ v1 = "PYTHON String"
 #v1[2] = 'b' # will give error because String doesn't allow element update. String is immutable
 # Deleting element from string from specific position is not possible.
 
-del v1; # can delete whole string
+del v1 # can delete whole string
 
 ######################## String Operations #############################
 
@@ -178,10 +173,10 @@ print('t' not in var1) # to validate if a character is NOT present in a string. 
 
 #isupper(),islower(),lower() ----to check upper or lower case characters
 
-print(var1.isupper()); # o/p TRUE or FALSE
-print(var1.islower()); # o/p TRUE or FALSE
-print(var1.lower()); # to change all characters in lower case
-print(var1.upper()); # to change all characters in upper case
+print(var1.isupper()) # o/p TRUE or FALSE
+print(var1.islower()) # o/p TRUE or FALSE
+print(var1.lower()) # to change all characters in lower case
+print(var1.upper()) # to change all characters in upper case
 
 ####################### LOOPS ###########################################
 #For Loop
@@ -192,7 +187,7 @@ for val in 'Python String':
     print(val)
 
 #If Else Loop
-a=3;
+a=3
 if (a==2):
     print(a) #Indentation is very important. Shouldn't change start location of print or else statements
 else:
@@ -235,7 +230,7 @@ print('Test1')
 print('Test2')
 
 ## If condition with indentation
-x=2;
+x=2
 if (x==2):
     print('Value maches')
 
@@ -267,15 +262,15 @@ len (myset)
 
 #myset1 = {11,1.1, "A" [12,12,14,15]} #throws exception
 
-s1 =  {1,(2,3,4)}
-s2 = set (["A", "B", "C"])
+#s1 =  {1,(2,3,4)}
+#2 = {"A", "B", "C"}
 
 L11 = ["A", "B", "C"]
 s12 = set(L11)
 
 # Add and update two sets
 s1 = {1,(2,3,4)}
-s2 = set (["A", "B", "C"])
+s2 = {"A", "B", "C"}
 
 #s3 = s1.add(s2)
 s4 = s1.update([44,45,46])
@@ -424,7 +419,7 @@ print("{keys}:{Values}")
 for key, value in satyadct1.items():
     print({key}, ":", {value})
 
-satyadct2 = {'Name':"Satya", 'Roll':123, 'Sub':'Programming', 'city':['pune', 'mumbai', 'delhi']}
+#satyadct2 = {'Name':"Satya", 'Roll':123, 'Sub':'Programming', 'city':['pune', 'mumbai', 'delhi']}
 
 # print key & values through iteration ----dict with a list
 satyadct2 = {'Name':"Satya", 'Roll':123, 'Sub':'Programming', 'city':['pune', 'mumbai', 'delhi']}
@@ -436,7 +431,7 @@ for key, value in satyadct2.items():
 ###### dict creation through list
 days = ['sun','mon','tue','wed','thu','fri','sat'] #List
 type(days)
-{day:len(day) for day in days}
+print({day:len(day) for day in days})
 
 # dictionary comprehensation
 {day: i for i, day in enumerate(days)} # Iterat / assign day number to the values  / create a sequence of elements
