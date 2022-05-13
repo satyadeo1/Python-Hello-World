@@ -1,8 +1,6 @@
-# -*- coding: utf-8 -*-
 """
 Python keywords
 """
-
 #keyword.kwlist
 ################################
 x = pow(2,10)
